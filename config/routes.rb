@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'signup', to: 'users#new'
   post 'users', to: 'users#create'
+  get 'login', to: 'sessions#new'
 
   resources :articles
   resources :users, except: [:new]
